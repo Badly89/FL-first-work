@@ -103,24 +103,63 @@ body
     color: #898989
     font-size: 14px
 
+.content-news
+    display: grid
+    grid-template-columns: repeat(auto-fill, 320px);
+
 .main-news
+    display: flex
+    flex-direction: column
     position: relative
+    
+    
+.main-new-img
     width: 580px
     height: 350px
-    background: url("img/main-news.png") no-repeat
-
-.bgr
-    width: 580px
-    filter: brightness(80%)
+    background-size: cover
+    filter: brightness(0.75)
+    
 
 .title-news
     position: absolute
+    top: 150px
+    right: 0
+    left: 0
+    bottom: 0
+    margin: 0 85px
+    width: 411px
+
     font-family: Merriweather
     font-style: normal
     font-weight: bold
     font-size: 26px
     line-height: 33px
     text-align: center
-    color: black
-   
+    text-decoration: none
+    color: #FDFDFF;
+
+.title-news:hover
+    text-decoration: none
+    color: #000000
+
+.fa-comment-alt 
+    font-size: 14px
+    color: #C4C4C4
+
+.info-news
+    position: absolute
+    display: flex
+    justify-content: space-around
+    width: 200px
+    left: 0
+    right: 520px
+    bottom: 36px
+    margin: auto
+    color: #DEDEDE
+    font-family: Archivo
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 15px
+    letter-spacing: 1px
     
