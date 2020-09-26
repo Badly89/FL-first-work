@@ -130,16 +130,25 @@ body {
 .fa-align-left {
   color: #898989;
   font-size: 14px;
+  margin-right: 10px;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content-news {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (320px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 320px);
+  margin-top: 50px;
 }
 
-.main-news {
+.main-news-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +159,7 @@ body {
   position: relative;
 }
 
-.main-new-img {
+.card-img {
   width: 580px;
   height: 350px;
   background-size: cover;
@@ -186,7 +195,7 @@ body {
   color: #C4C4C4;
 }
 
-.info-news {
+.info-news-main {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,8 +203,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 200px;
-  left: 0;
-  right: 520px;
+  left: 12em;
   bottom: 36px;
   margin: auto;
   color: #DEDEDE;
@@ -205,5 +213,63 @@ body {
   font-size: 14px;
   line-height: 15px;
   letter-spacing: 1px;
+}
+
+.block1-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block2-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 33px;
+}
+
+.card-wrap {
+  width: 266px;
+}
+
+.card {
+  border: none;
+}
+
+.card-footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+}
+
+.text-muted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-text {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 1px;
+}
+
+.wrap-news {
+  margin: 40px;
 }
 /*# sourceMappingURL=style.css.map */
