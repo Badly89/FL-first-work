@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo&family=Inter&family=Merriweather&family=Montserrat:wght@300;400;500;700&family=Raleway:wght@300;400;500;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Inter:wght@400;600;700&family=Merriweather:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -17,127 +17,208 @@
 
 <body>
     <section class="header ">
-        <div class="top-menu ">
+        <div class="top-menu">
             <nav class="navbar navbar-dark bg-dark">
                 <div class="container">
-                    <div class="nav-one"><span class="navbar-brand mb-0 h1">КиноКино</span><a href="#"><i
-                                class="fas fa-caret-right caret"></i><span class="online">Онлайн-кинотеатр</span></a><a
-                            href="#"><i class="fas fa-gift gift"></i><span class="promo">Ввести промокод</span></a>
+                    <div class="nav-one">
+                        <div class="d-flex">
+                            <span class="navbar-brand mb-0 h1">КиноКино</span>
+                            <div class="hamburger-menu">
+                                <input id="menu-toggle" type="checkbox" />
+                                <label class="menu-btn" for="menu-toggle">
+                                    <span></span>
+                                </label>
+                                <ul class="menu-box">
+                                    <li><a class="menu-item" href="#">Главная</a></li>
+                                    <li><a class="menu-item" href="#">Проекты</a></li>
+                                    <li><a class="menu-item" href="#">Команда</a></li>
+                                    <li><a class="menu-item" href="#">Блог</a></li>
+                                    <li><a class="menu-item" href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-caret-right caret"></i><span
+                                class="online">Онлайн-кинотеатр</span></a><a href="#"><i
+                                class="fas fa-gift gift"></i><span class="promo">Ввести промокод</span></a>
                     </div>
                     <div class="search">
-                        <form class="form-inline"><input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                aria-label="Search"><button class="btn btn-outline-success my-2 my-sm-0"
-                                type="submit"><i class="fas fa-search"></i></button></form>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2 search-form" type="search"
+                                placeholder="Фильмы, сериалы, персоны" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
                     </div>
-                    <div class="acount"><i class="fas fa-bookmark"></i><a href="#"><i
-                                class="far fa-user-circle"></i></a></div>
+                    <div class="acount">
+                        <a href="#" class="fas fa-bookmark"></a>
+                        <a href="#">
+                            <i class="far fa-user-circle"></i>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
         <div class="serch-block"></div>
         <div class="block-acount"></div>
     </section>
-    <main class="">
-        <section class="nav-menu ">
-            <div class="name-block">Медиа</div>
-            <nav class="menu-content ">
+    <main class="main-content-news">
+        <section class="nav-menu container">
+            <span class="name-block">Медиа</span>
+
+            <div class="menu-content">
                 <ul class="ul-nav ">
-                    <li class=" nav-li">Все материалы</li>
-                    <li class="nav-li">Новости</li>
-                    <li class="nav-li">Статьи</li>
-                    <li class="nav-li">Видео</li>
-                    <li class="nav-li">Тесты</li>
-                    <li class="nav-li">Подкасты</li>
+                    <li class="nav-li"><a href="">Все материалы</a></li>
+                    <li class="nav-li"><a href="#">Новости</a> </li>
+                    <li class="nav-li"><a href="#">Статьи</a> </li>
+                    <li class="nav-li"><a href="#">Видео</a> </li>
+                    <li class="nav-li"><a href="#">Тесты</a> </li>
+                    <li class="nav-li"><a href="#">Подкасты</a> </li>
                 </ul>
-            </nav>
+            </div>
             <div class="rubrik"><span class="title-rubrik">Рубрики</span><i class="fas fa-align-left"></i></div>
         </section>
         <section class="content-news ">
-            <div class="wrap-news">
-                <div class="container px-lg-3">
-                    <div class="row justify-content-md-center mx-lg-n5">
-                        <div class="card py-3 px-lg-3 text-white col-ms-auto col-md-auto col-lg-8 col-xl-6 "><img
-                                src="img/main-news.png" alt="" class="card-img">
-                            <div class="card-img-overlay "><a href="#" class="card-title title-news"><span>Фильм
-                                        “Прислуга” вновь популярен на фоне протестов,
-                                        но активисты призывают не смотеть его </span></a>
-                                <div class="info-news-main">
-                                    <div class="card-text">Сегодня, 11:58</div>
-                                    <div class="card-text"><i class="fas fa-comment-alt"></i><span
-                                            class="count">14</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card py-3 px-lg-3 col-md-6 col-lg-4 col-xl-3 h-100">
-                            <div class="card-wrap"><img src="img/news-1.png" alt="" class="card-img-top">
-                                <div class="new-content card-body">
-                                    <h5 class="card-title">Бюро находок</h5>
-                                    <p class="card-text">Находка дня: Первые фильмы Квентина Тарантино,
-                                        Кристофера Налона и других... </p>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="text-muted">вчера</div>
-                                    <i class="fas fa-comment-alt"></i>
-                                    <div class="text-muted ">5</div>
-                                </div>
+            <div class="container px-lg-3">
+                <div class="row justify-content-md-center mx-lg-n5">
+                    <div class="card py-3 px-lg-3 text-white col-ms-auto col-md-auto col-lg-8 col-xl-6 ">
+                        <img src="img/main-news.png" alt="" class="card-img">
+                        <div class="card-img-overlay "><a href="#" class=" title-news"><span>Фильм
+                                    “Прислуга” вновь популярен на фоне протестов,
+                                    но активисты призывают не смотеть его </span></a>
+                            <div class="card-footer info-news-main footer-main">
+                                <div class="text-muted text-main-news">Сегодня, 11:58</div>
+                                <div class="count">
+                                    <i class="fas fa-comment-alt">
+                                        <div class="counter">5</div>
+                                    </i>
 
-                            </div>
-                        </div>
-                        <div class="card py-3 px-lg-3 col-md-6 col-lg-4 col-xl-3 h-100 ">
-                            <div class="card-wrap"><img src="img/news-2.png" alt="" class="card-img-top">
-                                <div class="new-content card-body">
-                                    <p class="card-text">Опрос КиноПоиска: Выбираем лучший саундтрек к зарубежному
-                                        фильму </p>
                                 </div>
-                                <div class="card-footer"><span class="text-muted">вчера</span>
-                                    <div class="comment"><span class="text-muted">17</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card py-3 px-lg-3 col-md-6 col-xl-3 col-lg-4 ">
-                            <div class="card-wrap"><img src="img/news-3.png" alt="" class="card-img-top">
-                                <div class="new-content card-body">
-                                    <p class="card-text">Находка дня: Первые фильмы Квентина Тарантино,
-                                        Кристофера Налона и других...</p>
-                                </div>
-                                <div class="card-footer"><span class="text-muted">вчера <i
-                                            class="fas fa-comment-alt"></i></span></div>
-                            </div>
-                        </div>
-                        <div class="card py-3 px-lg-3 col-md-6 col-xl-3 col-lg-4 ">
-                            <div class="card-wrap"><img src="img/news-4.png" alt="" class="card-img-top">
-                                <div class="new-content card-body">
-                                    <p class="card-text">Находка дня: Первые фильмы Квентина Тарантино,
-                                        Кристофера Налона и других...</p>
-                                </div>
-                                <div class="card-footer"><span class="text-muted">вчера <i
-                                            class="fas fa-comment-alt"></i>10</span></div>
-                            </div>
-                        </div>
-                        <div class="card py-3 px-lg-3 col-md-6 col-xl-3 col-lg-4 ">
-                            <div class="card-wrap"><img src="img/news-5.png" alt="" class="card-img-top">
-                                <div class="new-content card-body">
-                                    <p class="card-text">Находка дня: Первые фильмы Квентина Тарантино,
-                                        Кристофера Налона и других...</p>
-                                </div>
-                                <div class="card-footer"><span class="text-muted">вчера <i
-                                            class="fas fa-comment-alt"></i>5</span></div>
-                            </div>
-                        </div>
-                        <div class="card py-3 px-lg-3 col-md-6 col-xl-3 col-lg-4 ">
-                            <div class=" card-wrap"><img src="img/news-6.png" alt="" class="card-img-top">
-                                <div class="new-content card-body">
-                                    <p class="card-text">Находка дня: Первые фильмы Квентина Тарантино,
-                                        Кристофера Налона и других...</p>
-                                </div>
-                                <div class="card-footer"><span class="text-muted">вчера <i
-                                            class="fas fa-comment-alt"></i>4</span></div>
                             </div>
                         </div>
                     </div>
+                    <div class="py-3 px-lg-3 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card card-wrap h-100">
+                            <img src="img/news-1.png" alt="" class="card-img-top">
+                            <div class="new-content card-body h-100">
+                                <a href="#" class="card-title">
+                                    <h5>Бюро находок</h5>
+                                </a>
+                                <a href="#" class="card-text">
+                                    <p>Находка дня: Первые фильмы Квентина Тарантино,
+                                        Кристофера Налона и других... </p>
+                                </a>
+                            </div>
+                            <div class="card-footer">
+                                <div class="text-muted">вчера</div>
+                                <div class="count">
+                                    <i class="fas fa-comment-alt">
+                                        <div class="counter ">5</div>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" py-3 px-lg-3 col-md-6 col-lg-4 col-xl-3  ">
+                        <div class="card-wrap card h-100">
+                            <img src=" img/news-2.png" alt="" class="card-img-top">
+                            <div class="new-content card-body">
+                                <a href="" class="card-text">
+                                    <p>Опрос КиноПоиска: Выбираем лучший саундтрек к зарубежному
+                                        фильму </p>
+                                </a>
+                            </div>
+                            <div class="card-footer ">
+                                <div class="text-muted">вчера</div>
+                                <div class="count">
+                                    <i class="fas fa-comment-alt">
+                                        <div class="counter ">5</div>
+                                    </i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3 px-lg-3 col-md-6 col-xl-3 col-lg-4 ">
+                        <div class="card-wrap card h-10"><img src="img/news-3.png" alt="" class="card-img-top">
+                            <div class="new-content card-body">
+                                <a href="" class="card-text">
+                                    <p>Находка дня: Первые фильмы Квентина Тарантино,
+                                        Кристофера Налона и других...</p>
+                                </a>
+                            </div>
+                            <div class="card-footer ">
+                                <div class="text-muted">вчера</div>
+                                <div class="count">
+                                    <i class="fas fa-comment-alt">
+                                        <div class="counter ">5</div>
+                                    </i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card py-3 px-lg-3 col-md-6 col-xl-3 col-lg-4 ">
+                        <div class="card-wrap card h-100"><img src="img/news-4.png" alt="" class="card-img-top">
+                            <div class="new-content card-body">
+                                <a href="#" class="card-text">
+                                    <p>Находка дня: Первые фильмы Квентина Тарантино,
+                                        Кристофера Налона и других...</p>
+                                </a>
+                            </div>
+                            <div class="card-footer ">
+                                <div class="text-muted">вчера</div>
+                                <div class="count">
+                                    <i class="fas fa-comment-alt">
+                                        <div class="counter ">5</div>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" py-3 px-lg-3 col-md-6 col-xl-3 col-lg-4 ">
+                        <div class="card-wrap card h-100"><img src="img/news-5.png" alt="" class="card-img-top">
+                            <div class="new-content card-body">
+                                <a href="#" class="card-text">
+                                    <p>Находка дня: Первые фильмы Квентина Тарантино,
+                                        Кристофера Налона и других...</p>
+                                </a>
+
+                            </div>
+                            <div class="card-footer ">
+                                <div class="text-muted">вчера</div>
+                                <div class="count">
+                                    <i class="fas fa-comment-alt">
+                                        <div class="counter ">5</div>
+                                    </i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" py-3 px-lg-3 col-md-6 col-xl-3 col-lg-4 ">
+                        <div class="card-wrap card h-100"><img src="img/news-6.png" alt="" class="card-img-top">
+                            <div class="new-content card-body">
+                                <a href="#" class="card-text">
+                                    <p>Находка дня: Первые фильмы Квентина Тарантино,
+                                        Кристофера Налона и других...</p>
+                                </a>
+
+                            </div>
+                            <div class="card-footer ">
+                                <div class="text-muted">вчера</div>
+                                <div class="count">
+                                    <i class="fas fa-comment-alt">
+                                        <div class="counter ">5</div>
+                                    </i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            < !-- </div>-->
         </section>
     </main>
 </body>
